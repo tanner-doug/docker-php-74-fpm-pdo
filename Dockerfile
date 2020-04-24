@@ -1,7 +1,7 @@
 FROM php:7.4-fpm
 MAINTAINER tanner.doug@gmail.com
 
-RUN apt-get update && docker-php-ext-install zip
+RUN apt-get update
 
 RUN docker-php-ext-install pdo pdo_mysql
 RUN apt-get update && apt-get install -y \
