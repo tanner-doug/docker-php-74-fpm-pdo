@@ -4,7 +4,7 @@ MAINTAINER tanner.doug@gmail.com
 RUN apt-get update && apt-get -y install apt-utils libxml2-dev gnupg \
     && apt-get install -y zlib1g-dev \
     && apt-get install -y libzip-dev \
-    && docker-php-ext-install zip
+    && docker-php-ext-install zip 
 
 # Install MS ODBC Driver for SQL Server
 RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
