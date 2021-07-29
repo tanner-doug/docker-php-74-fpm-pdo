@@ -29,4 +29,5 @@ RUN apt-get install -y libpng-dev libfreetype6-dev libjpeg62-turbo-dev \
 RUN pecl install imagick && docker-php-ext-enable imagick
 RUN docker-php-ext-configure opcache --enable-opcache && docker-php-ext-install opcache
 
+
 EXPOSE 80
